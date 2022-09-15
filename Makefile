@@ -23,7 +23,7 @@ all: build
 
 # PLATFORMS is the set of OS_ARCH that NPD can build against.
 LINUX_PLATFORMS=linux_amd64 linux_arm64
-DOCKER_PLATFORMS=linux/amd64,linux/arm64
+DOCKER_PLATFORMS?=linux/amd64,linux/arm64
 PLATFORMS=$(LINUX_PLATFORMS) windows_amd64
 
 # VERSION is the version of the binary.
